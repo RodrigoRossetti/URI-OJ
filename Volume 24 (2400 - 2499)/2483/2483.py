@@ -1,0 +1,1 @@
+print("Feliz nat{}l!".format(int(input()) * 'a'))
