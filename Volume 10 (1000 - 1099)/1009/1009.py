@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 name = input()
 wage = float(input())
 bonus = float(input())

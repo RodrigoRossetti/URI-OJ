@@ -1,45 +1,25 @@
-#include <iostream>
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
+#define endl '\n'
+
 int main() {
- double n1, n2, n3, n4, nE, M, MF;
-
- cin>>n1>>n2>>n3>>n4;
-
-  cout<<fixed;
-    cout.precision(1);
-
- M=(n1*2+n2*3+n3*4+n4*1)/(2.0+3.0+4.0+1.0);
-
-if(M>=7){
-   cout<<"Media: "<<M<<endl;
-   cout<<"Aluno aprovado."<<endl;
- }
- else if (M<5){
-   cout<<"Media: "<<M<<endl;
-   cout<<"Aluno reprovado."<<endl;
- }
- 
- else if (M>=5 && M<7){
-   cout<<"Media: "<<M<<endl;
-   cout<<"Aluno em exame."<<endl;
-   cout<<"Nota do exame: ";
-   cin>>nE;
-
-   MF=(nE+M)/2;
-   cout << nE << endl;
-
-   if(MF>=5){
-     cout<<"Aluno aprovado."<<endl;
-     cout<<"Media final: "<<MF<<endl;
-   }
-   else{
-   cout<<"Aluno reprovado"<<endl;
-   cout<<"Media final: "<<MF<<endl;
-   }
-
- }
-
-  return 0;
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout << fixed << setprecision(1);
+    double n1, n2, n3, n4, media, exame;
+	cin >> n1 >> n2 >> n3 >> n4;
+    media = ((n1 * 2.0) + (n2 * 3.0) + (n3 * 4.0) + (n4 * 1.0))/10.0;
+    cout << "Media: " << media << endl;
+    if (media >= 7) cout << "Aluno aprovado.\n";
+    else if (media < 5) cout << "Aluno reprovado.\n";
+    else {
+		cout << "Aluno em exame.\n";
+        cin >> exame;
+        cout << "Nota do exame: " << exame << endl;
+        media = (media+exame) / 2;
+		cout << "Aluno " << (media >= 5 ? "aprovado." : "reprovado.") << endl;
+        cout << "Media final: " << media << endl;
+    }
+    return 0;
 }

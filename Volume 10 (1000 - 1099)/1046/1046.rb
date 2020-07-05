@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 a,b = Array.new(gets.split.map(&:to_i))
 if b > a

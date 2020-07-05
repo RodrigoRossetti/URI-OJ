@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 ddd = {
     61: "Brasilia",
     71: "Salvador",

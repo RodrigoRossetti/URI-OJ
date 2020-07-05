@@ -34,7 +34,6 @@ public:
 
 	void aresta(int u, int v, int w) {
 		adj[u].push_back(make_pair(v, w));
-		//adj[v].push_back(make_pair(u, w));
 	}
 
 	void dfs() {

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 n1, n2, n3 = gets.split.map(&:to_i)
 
 if n1 >= n2 and n1 >= n3

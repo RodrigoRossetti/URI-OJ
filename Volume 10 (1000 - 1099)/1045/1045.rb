@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 t = (Array.new(gets.split.map(&:to_f))).sort
 if t[2] >= t[1] + t[0]

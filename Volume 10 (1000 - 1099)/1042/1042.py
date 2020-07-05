@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 l = [int(i) for i in input().split(' ')]
 s = sorted(l)
 for i in range(0,len(s)):

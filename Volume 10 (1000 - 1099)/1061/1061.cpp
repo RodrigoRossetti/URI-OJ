@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(){
+int main() {
     int d = 0, h = 0, m = 0, s = 0;
     int df = 0, hf = 0, mf = 0, sf = 0;
     char trash[20];
@@ -29,4 +29,6 @@ int main(){
     cout << (dur%86400)/3600 << " hora(s)\n";
     cout << ((dur%86400)%3600)/60 << " minuto(s)\n";
     cout << ((dur%86400)%3600)%60 << " segundo(s)\n";
+
+    return 0;
 }

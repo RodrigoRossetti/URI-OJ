@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 n = int(input())
 x = n//3600
 n -= x * 3600

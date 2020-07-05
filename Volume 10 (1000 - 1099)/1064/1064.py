@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 n = 0
 s = 0
 for i in range(0,6):

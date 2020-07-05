@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 for i in range(int(input())):
     n = int(input())
     if n > 0 and n % 2 == 0: print("EVEN POSITIVE")

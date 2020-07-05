@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 n = int(input())
 a = 0
 m = 0
