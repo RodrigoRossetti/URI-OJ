@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 flag = 0
 while True:
 	try:

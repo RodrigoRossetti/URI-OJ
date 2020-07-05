@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 flag = false
 while n = gets
 	n = n.to_i
