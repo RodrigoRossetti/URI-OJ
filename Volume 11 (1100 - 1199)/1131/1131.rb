@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 s = 1
 gremio = inter = empates = total = 0

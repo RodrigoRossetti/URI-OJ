@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 for i in 0...gets.to_i
     a, b = gets.split(' ').map(&:to_f)

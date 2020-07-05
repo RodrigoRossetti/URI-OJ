@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 l = [int(i)for i in input().split(' ')]
 while l[0] != 0 and l[0] != 0:
     t = ""

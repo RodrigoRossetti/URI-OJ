@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 n = gets.to_i
 l = Array.new(gets.split.map(&:to_i))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 l = [0,0,0]
 n = int(input())
 while n != 4:

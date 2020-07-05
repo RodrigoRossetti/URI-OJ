@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     double total = 0, arr[12][12];
     char c;
     int x, y, i, j, cond1 = 0, cond2 = 4;
@@ -27,4 +26,5 @@ int main()
      
     if(c=='S') printf("%.1lf\n", total);
     else if(c=='M') printf("%.1lf\n", total/30);
+    return 0;
 }

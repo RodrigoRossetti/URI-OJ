@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 for i in range(0, int(input())):
     total = 0
     s = [int(j) for j in input().split(' ')]

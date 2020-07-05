@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 total = 0
 a,b = Array.new(gets.split.map(&:to_i))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 total = 0
 i = 0
 while(1):
