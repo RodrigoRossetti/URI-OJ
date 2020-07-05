@@ -1,0 +1,1 @@
+print("SOMA = {}".format(int(float(input())+float(input()))))
