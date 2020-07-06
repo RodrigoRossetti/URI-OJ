@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 bit = gets.chomp
 if bit.count('1') % 2 == 0

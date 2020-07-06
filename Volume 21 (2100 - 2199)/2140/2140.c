@@ -1,23 +1,19 @@
 #include <stdio.h>
 
-int main()
-{
-    int N, M, net, i, cndtn;
-    int bill[15] = {7, 12, 22, 52, 102, 15, 25, 55, 105, 30, 60, 110, 70, 120, 150};
-    while(1)
-    {
-        scanf("%d%d", &N, &M);
-        if(N==0 && M==0) break;
-        net = M - N;
-        for(i=0, cndtn = 0; i<15; i++)
-        {
-            if(bill[i] == net)
-            {
-                cndtn = 1;
+int main() {
+    int n, m, dif, i, flag;
+    int notas[15] = {7, 12, 22, 52, 102, 15, 25, 55, 105, 30, 60, 110, 70, 120, 150};
+    while(1) {
+        scanf("%d %d", &n, &m);
+        if (n == 0 && m == 0) break;
+        dif = m - n;
+        for (i = 0, flag = 0; i < 15; i++){
+            if (notas[i] == dif) {
+                flag = 1;
                 break;
             }
         }
-        if(cndtn) printf("possible\n");
+        if (flag) printf("possible\n");
         else printf("impossible\n");
     }
     return 0;

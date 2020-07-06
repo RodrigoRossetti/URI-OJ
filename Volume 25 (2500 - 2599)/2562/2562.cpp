@@ -17,7 +17,6 @@ grafo::grafo(int v) {
 
 void grafo::aresta(int u, int w, int k) {
 	adj[u].push_back(make_pair(w, k));
-	//adj[w].push_back(make_pair(u, k));
 }
 
 int grafo::bfs(int raiz) {

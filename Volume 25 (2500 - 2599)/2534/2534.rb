@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 while linha = gets
 	n, q = linha.split.map(&:to_i)
 	v = Array.new(n)

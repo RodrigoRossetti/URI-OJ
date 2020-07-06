@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 patinhos = gets.to_i
 while patinhos != -1

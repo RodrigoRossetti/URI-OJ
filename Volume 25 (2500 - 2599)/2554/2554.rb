@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 while line = gets
     k = "Pizza antes de FdI"

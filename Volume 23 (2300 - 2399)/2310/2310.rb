@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 t1 = t2 = t3 = i1 = i2 = i3 = 0
 for i in 0...gets.to_i
     s = gets.chomp
