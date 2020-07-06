@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 for i in range(0,int(input())):
     l1 = input().split(' ')
     l2 = [int(i) for i in input().split(' ')]

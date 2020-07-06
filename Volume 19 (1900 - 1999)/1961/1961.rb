@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 a, n = gets.split.map(&:to_i)
 win = 1

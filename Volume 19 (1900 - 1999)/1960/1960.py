@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 n = int(input())
 s = ""
 if n >= 1000:

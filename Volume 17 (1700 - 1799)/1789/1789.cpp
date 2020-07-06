@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n, p, max = 0;
     while (scanf("%d", &n) != EOF) {
         for (int i = 0; i < n; i++) {

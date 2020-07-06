@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
     long int code, codef;
     float note, max = 1;

@@ -1,21 +1,18 @@
 #include <stdio.h>
-int main()
-{
-    int tst;
-    scanf("%d", &tst);
-    while(tst--)
-    {
-        int year, dif;
-        scanf("%d", &dif);
-        if(dif<2015)
-        {
-            year = 2015 - dif;
-            printf("%d D.C.\n", year);
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    while (n--) {
+        int ano, t;
+        scanf("%d", &t);
+        if (t < 2015) {
+            ano = 2015 - t;
+            printf("%d D.C.\n", ano);
         }
-        else
-        {
-            year = dif - 2014;
-            printf("%d A.C.\n", year);
+        else {
+            ano = t - 2014;
+            printf("%d A.C.\n", ano);
         }
     }
     return 0;

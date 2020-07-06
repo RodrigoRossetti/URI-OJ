@@ -2,7 +2,7 @@
 using namespace std;
 
 int knapSack(int W, vector<int> wt, vector<int> val, int n) {
-int i, w;
+	int i, w;
 	int K[n+1][W+1];
 
 	for (i = 0; i <= n; i++) {
