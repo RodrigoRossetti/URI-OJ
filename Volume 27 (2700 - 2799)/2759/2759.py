@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 a = input()
 b = input()
 c = input()

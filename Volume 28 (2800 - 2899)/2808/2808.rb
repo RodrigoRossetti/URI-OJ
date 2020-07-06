@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 movimentos = Array.new(gets.split(' '))
 if (movimentos[1][0].ord - movimentos[0][0].ord).abs == 2 and (movimentos[1][1].to_i - movimentos[0][1].to_i).abs == 1

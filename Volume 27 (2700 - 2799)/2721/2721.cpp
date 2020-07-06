@@ -1,55 +1,25 @@
-#include <iostream>
-#include<stdio.h>
-#include<math.h>
-#include<algorithm>
-#include<stack>
-#include<queue>
-#include<set>
-#include<map>
-#include<vector>
-#include<math.h>
-#include<string>
-#include<list>
-
-
+#include <bits/stdc++.h>
 using namespace std;
+ 
+int main() {
+    long long a, i, total = 0;
+    for (i = 0; i < 9; i++) {
+        scanf("%lld", &a);
+        total += a;
+    }
+    
+    total %= 9;
+    if (total != 0) total -= 1;
+    else total = 8;
 
-
-#define ll long long
-#define input scanf
-#define output printf 
-#define Loop while
-#define echo cout
-#define ret return
-#define MAX 999999999999999999
-#define MIN 0
-#define PI 3.1415
-
-vector<string> a;
-void sieve();
-string toBinary(int n);
-bool findingSubString(string a,string b);
-
-int main(int argc, char** argv) {
-	
-	//freopen("c.txt","w",stdout)
-	sieve();
-	int a;
-	ll sum=0;
-	for(int i=0;i<9;i++)
-	{
-		cin>>a;
-		sum+=a;
-	}
-	cout<<::a[sum%9]<<endl;
-	ret 0;
-}
-void sieve()
-{
-	 a.push_back("Rudolph");a.push_back("Dasher"); 
-	 a.push_back("Dancer");a.push_back("Prancer");
-	 a.push_back("Vixen");a.push_back("Comet");
-	 a.push_back("Cupid");a.push_back("Donner");
-	 a.push_back("Blitzen");
-	 return;
+    if (total == 0) printf("Dasher\n");
+    else if (total == 1) printf("Dancer\n");
+    else if (total == 2) printf("Prancer\n");
+    else if (total == 3) printf("Vixen\n");
+    else if (total == 4) printf("Comet\n");
+    else if (total == 5) printf("Cupid\n");
+    else if (total == 6) printf("Donner\n");
+    else if (total == 7) printf("Blitzen\n");
+    else if (total == 8) printf("Rudolph\n");
+    return 0;
 }

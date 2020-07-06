@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 t = int(input())
 s = 0
 if t <= 800 and t >= 0:

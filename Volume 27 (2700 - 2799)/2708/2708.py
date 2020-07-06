@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 total = veiculos = 0
 s = [str(i) for i in input().split(' ')]
 while s[0] != "ABEND":

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 print("       A")
 print("      B B")
 print("     C   C")

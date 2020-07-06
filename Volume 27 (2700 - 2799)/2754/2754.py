@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 print("234.345000 - 45.698000")
 print("234 - 46")
 print("234.3 - 45.7")

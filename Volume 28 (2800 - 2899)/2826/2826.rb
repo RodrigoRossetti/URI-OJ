@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 s1 = gets.chomp
 s2 = gets.chomp

@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 while str = gets
     if str.chomp == "esquerda"

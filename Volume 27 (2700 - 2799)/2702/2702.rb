@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 count = 0
 disponiveis = Array.new(gets.split.map(&:to_i))

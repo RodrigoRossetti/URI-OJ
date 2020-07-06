@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 count = 0
 motor = Array.new(gets.split.map(&:to_i))

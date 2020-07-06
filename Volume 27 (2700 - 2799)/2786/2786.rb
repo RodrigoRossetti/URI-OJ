@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 largura = gets.to_i
 comprimento = gets.to_i
