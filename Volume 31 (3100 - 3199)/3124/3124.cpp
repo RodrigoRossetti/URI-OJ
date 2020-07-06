@@ -5,16 +5,16 @@ using namespace std;
 
 class grafo {
 	int v;
-	vector<pair<int, double>> *adj;
+	vector<pair<int, long double>> *adj;
 
 public:
 
 	grafo(int v) {
 		this->v = v;
-		adj = new vector<pair<int, double>>[v];
+		adj = new vector<pair<int, long double>>[v];
 	}
 
-	void aresta(int u, int w, double k) {
+	void aresta(int u, int w, long double k) {
 		adj[u].push_back(make_pair(w, k));
 		adj[w].push_back(make_pair(u, k));
 	}
@@ -27,9 +27,10 @@ public:
 		}
 	}
 
-	vector<double> prim(int raiz) { 
-		priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> pq;
-		vector<double> dist(v, DBL_MAX);
+	vector<long double> prim(int raiz) { 
+		priority_queue<pair<long double, int>, vector<pair<long double, int>>,
+						greater<pair<long double, int>>> pq;
+		vector<long double> dist(v, LDBL_MAX);
 		vector<bool> visitado(v, 0);
 		pq.push(make_pair(0, raiz));
 		dist[raiz] = 0;
@@ -51,8 +52,8 @@ public:
 
 };
 
-double distancia(pair<int, int> &a, pair<int, int> &b) {
-	return hypot(double(a.first-b.first), double(a.second-b.second));
+long double distancia(pair<int, int> &a, pair<int, int> &b) {
+	return hypotl(a.first-b.first*1.L, a.second-b.second*1.L);
 }
 
 int main() {
@@ -67,7 +68,7 @@ int main() {
 	for (int i = 0; i < p; i++)
 		for (int j = i+1; j < p; j++)
 			g.aresta(i, j, distancia(v[i], v[j]));
-	vector<double> k = g.prim(0);
-	cout << (double)accumulate(k.begin(), k.end(), 0.0) << endl;
+	vector<long double> k = g.prim(0);
+	cout << (long double)accumulate(k.begin(), k.end(), 0.0L) << endl;
 	return 0;
 }
