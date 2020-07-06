@@ -48,8 +48,6 @@ My Profile: [Rodrigo Rosseti](https://www.urionlinejudge.com.br/judge/pt/users/s
 
 - 🔴 [2975](https://www.urionlinejudge.com.br/judge/pt/problems/view/2975)<span style="color:red"> - Wrong Answer (15%)</span>
 
-- 🟤 [2980](https://www.urionlinejudge.com.br/judge/pt/problems/view/2980)<span style="color:brown"> - Presentation Error</span>
-
 - 🔴 [3009](https://www.urionlinejudge.com.br/judge/pt/problems/view/3009)<span style="color:red"> - Wrong Answer (15%)</span>
 
 - 🔴 [3016](https://www.urionlinejudge.com.br/judge/pt/problems/view/3016)<span style="color:red"> - Wrong Answer (20%)</span>
