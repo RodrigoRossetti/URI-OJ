@@ -28,8 +28,6 @@ My Profile: [Rodrigo Rosseti](https://www.urionlinejudge.com.br/judge/pt/users/s
 
 - 🔴 [2082](https://www.urionlinejudge.com.br/judge/pt/problems/view/2082)<span style="color:red"> - Wrong Answer (5%)</span>
 
-- 🔴 [2084](https://www.urionlinejudge.com.br/judge/pt/problems/view/2082)<span style="color:red"> - Wrong Answer (5%)</span>
-
 - 🔵 [2291](https://www.urionlinejudge.com.br/judge/pt/problems/view/2291)<span style="color:blue"> - Time Limit Exceeded</span>
 
 - 🔵 [2333](https://www.urionlinejudge.com.br/judge/pt/problems/view/2333)<span style="color:blue"> - Time Limit Exceeded</span>
