@@ -8,28 +8,25 @@ int main() {
 	cin.tie(NULL);
 	cout << fixed << setprecision(2);
 	int n, x, y, i = 0;
-	while (cin >> n) {
-		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+	while (cin >> n && n) {
+		map<int, int> mapa;
 		int total = 0, soma = 0;
 		while (n--) {
 			cin >> x >> y;
 			total += x, soma += y;
-			pq.push({floor((double)y/x), x});
+			mapa[floor((double)y/x)] += x;
 		}
 		if (i) cout << endl;
 		cout << "Cidade# " << ++i << ":\n";
-		while (!pq.empty()) {
-			pair<int, int> p = pq.top();
-			pq.pop();
-			while (!pq.empty() && pq.top().first == p.first) {
-				p.second += pq.top().second;
-				pq.pop();
-			}
+		bool flag = 0;
+		for (auto &p : mapa) {
+			if (flag) cout << " ";
 			cout << p.second << "-" << p.first;
-			if (!pq.empty()) cout << " ";
+			flag = 1;
 		}
 		cout << endl;
-		cout << "Consumo medio: " << (double)(soma*100/total)/100 << " m3.\n";
+		cout << "Consumo medio: " << soma/total << "." << setw(2) << setfill('0')
+             <<  100*(soma%total)/total << " m3.\n";
 	}
 	return 0;
 }
