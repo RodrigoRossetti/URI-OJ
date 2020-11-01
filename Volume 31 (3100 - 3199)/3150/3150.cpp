@@ -14,9 +14,12 @@ int main() {
 		degree[a]++, degree[b]++;
 	}
 	bool flag = 1;
-	for (int i = 0; i < n; i++)
-		if (degree[i] % 2 != 0)
+	for (int i = 0; i < n; i++) {
+		if (degree[i] % 2 != 0) {
 			flag = 0;
+			break;
+		}
+	}
 	cout << (flag ? "Rambo esta salvo" : "Rambo esta perdido") << endl;
 	return 0;
 }
