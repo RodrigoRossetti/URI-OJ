@@ -7,14 +7,6 @@ using namespace std;
 class grafo {
 	int v;
 	vector<pair<int, int>> *adj;
-	
-	void dfsR(int raiz, vector<bool> &visitado) {
-		visitado[raiz] = true; 
-		cout << raiz << " "; 
-		for (const auto& x : adj[raiz]) 
-			if (!visitado[x.first]) 
-				dfsR(x.first, visitado); 
-	}
 
 public:
 
@@ -26,12 +18,6 @@ public:
 	void aresta(int u, int w, int k) {
 		adj[u].push_back(make_pair(w, k));
 		adj[w].push_back(make_pair(u, k));
-	}
-
-	void dfs(int raiz) {
-		vector<bool> visitado(v, 0);
-		dfsR(raiz, visitado);
-		cout << endl;
 	}
 
 	vector<int> prim(int raiz) {
