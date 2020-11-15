@@ -18,14 +18,6 @@ struct grafo {
 		adj[u].push_back({w, k});
 	}
 
-	void imprime() {
-		for (int i = 0; i < v; i++) {
-			cout << '[' << i << "] ";
-			for (const auto& w : adj[i]) cout << "-> " << w.first << "(" << w.second << ") ";
-			cout << endl;
-		}
-	}
-
 	int dijkstra(int raiz, int fim) {
 		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 		vector<int> dist(v, INF);
@@ -65,7 +57,6 @@ int main() {
 	for (auto& x : v)
 		getline(cin, x);
 	grafo g(n*m);
-
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
 			if (v[i][j] == 'H') inicio = i*m+j;
