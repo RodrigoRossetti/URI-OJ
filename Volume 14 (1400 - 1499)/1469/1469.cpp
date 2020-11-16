@@ -38,13 +38,14 @@ struct grafo {
 		return menor;
 	}
 
-	void swap(int a, int b) {
+	void swapNode(int a, int b) {
 		for (int i = 0; i < v; i++) {
 			for (auto& w : adj[i]) {
 				if (w.first == a) w.first = b;
 				else if (w.first == b) w.first = a;
 			}
 		}
+		swap(adj[a], adj[b]);
 	}
 
 };
@@ -68,8 +69,7 @@ int main() {
 			if (c == 'T') {
 				cin >> a >> b;
 				a--, b--;
-				g.swap(a, b);
-				swap(g.adj[a], g.adj[b]);
+				g.swapNode(a, b);
 			}
 			else if (c == 'P') {
 				cin >> e;
