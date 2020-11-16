@@ -56,9 +56,8 @@ int main() {
 	char c;
 	while (cin >> n >> m >> i) {
 		grafo g(n);
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++)
 			cin >> g.age[i];
-		}
 		while (m--) {
 			cin >> a >> b;
 			a--, b--;
