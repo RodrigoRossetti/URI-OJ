@@ -5,7 +5,7 @@ using namespace std;
 
 int n;
 
-void dfs(vector<string>& v) {
+void compare(vector<string>& v) {
 	int total = 0;
 	vector<bool> visitado(n, 0);
 	vector<int> out;
@@ -42,6 +42,6 @@ int main() {
 	vector<string> v(n);
 	for (int i = 0; i < n; i++)
 		getline(cin, v[i]);
-	dfs(v);
+	compare(v);
 	return 0;
 }
