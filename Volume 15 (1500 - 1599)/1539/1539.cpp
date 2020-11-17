@@ -18,16 +18,6 @@ struct grafo {
 		//adj[w].push_back({u, k});
 	}
 
-	void imprime() {
-		for (int i = 0; i < v; i++) {
-			cout << "[" << i << "] ";
-			for (auto& w : adj[i]) {
-				cout << "-> " << w.first << "(" << w.second << ") ";
-			}
-			cout << endl;
-		}
-	}
-
 	double dijkstra(int raiz, int fim) {
 		priority_queue<pair<double, int>, vector<pair<double, int>>, greater<pair<double, int>>> pq;
 		vector<double> dist(v, DBL_MAX);
