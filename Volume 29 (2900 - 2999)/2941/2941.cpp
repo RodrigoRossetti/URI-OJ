@@ -48,13 +48,6 @@ struct unionfind {
 		return parent[v] = find_set(parent[v]);
 	}
 
-	void print() {
-		for (int i = 0; i < n; i++) {
-			cout << i << " " << parent[i] << " " << size[i] << endl;
-		}
-		cout << endl;
-	}
-
 	int kruskal(int soma) {
 		int custo = 0, aux = 0;
 		sort(originais.rbegin(), originais.rend());
