@@ -23,8 +23,8 @@ int bfs(int x, int y) {
 		x = q.front().second.first;
 		y = q.front().second.second;
 		d = q.front().first;
-		if (arr[x][y] == 0) break;
 		q.pop();
+		if (arr[x][y] == 0) break;
 		test(q, x-1, y, d+1);
 		test(q, x+1, y, d+1);
 		test(q, x, y-1, d+1);
