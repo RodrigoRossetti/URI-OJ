@@ -1,10 +1,14 @@
-#include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    cout << "\"Ro'b'er\tto\\/\"\n";
-    cout << "(._.) ( l: ) ( .-. ) ( :l ) (._.)\n";
-    cout << "(^_-) (-_-) (-_^)\n";
-    cout << "(\"_\") (\'.\')\n";
+#define endl '\n'
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout << "\"Ro'b'er\tto\\/\"" << endl;
+    cout << "(._.) ( l: ) ( .-. ) ( :l ) (._.)" << endl;
+    cout << "(^_-) (-_-) (-_^)" << endl;
+    cout << "(\"_\") (\'.\')" << endl;
+    return 0;
 }
