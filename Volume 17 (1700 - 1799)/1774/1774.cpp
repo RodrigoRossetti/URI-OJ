@@ -34,9 +34,9 @@ struct grafo {
 				if (!visitado[w.first] && dist[w.first] > w.second) {
 					dist[w.first] = w.second;
 					pq.push({w.second, w.first});
-				} 
-			} 
-		} 
+				}
+			}
+		}
 		return accumulate(dist.begin(), dist.end(), 0);
 	}
 
