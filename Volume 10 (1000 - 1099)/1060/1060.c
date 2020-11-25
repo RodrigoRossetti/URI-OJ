@@ -1,14 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int i, c = 0;
-    for(i = 0; i < 6; i++) {
-        double t = 0;
-        scanf("%lf", &t);
-        if(t >= 0) {
-            c++;
-        }
+    int k, total = 0;
+    for (int i = 0; i < 6; i++) {
+        scanf("%d", &k);
+        if (k >= 0) total++;
     }
-    printf("%d valores positivos\n", c);
+    printf("%d valores positivos\n", total);
     return 0;
 }
