@@ -2,7 +2,7 @@
 using namespace std;
 
 #define endl '\n'
-#define INF 100000
+#define INF 1000000
 
 struct grafo {
 
