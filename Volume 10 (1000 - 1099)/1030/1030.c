@@ -1,23 +1,28 @@
 #include <stdio.h>
 
+int josephus(int n, int k) {
+    if (n == 1)
+        return 0;
+    if (k == 1)
+        return n-1;
+    if (k > n)
+        return (josephus(n-1, k) + k) % n;
+    int cnt = n / k;
+    int res = josephus(n - cnt, k);
+    res -= n % k;
+    if (res < 0)
+        res += n;
+    else
+        res += res / (k - 1);
+    return res;
+}
+
 int main() {
-    int nc, n, k, pos, last, arr[10000];
+    int nc, n, k;
     scanf("%d", &nc);
     for (int i = 1; i <= nc; i++) {
-        memset(arr, 0, sizeof(arr));
         scanf("%d %d", &n, &k);
-        for (int j = 0; j < n; j++) arr[j] = 1;
-        pos = n-1;
-        for (int j = 0; j < n-1; j++) {
-            for (int z = 0; z < k;) {
-                pos++;
-                if (pos == n) pos = 0;
-                if (arr[pos]) z++;
-            }
-            arr[pos] = 0;
-        }
-        for (int j = 0; j < n; j++) if (arr[j] == 1) last = j;
-        printf("Case %d: %d\n", i, last+1);
+        printf("Case %d: %d\n", i, josephus(n, k)+1);
     }
     return 0;
 }
