@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int main (void) {
-    int total = 0;
-    int i, cortes, c;
-    scanf ("%d", &cortes);
-    for (i = 0; i < cortes; i++) {
-        scanf ("%d", &c);
-        total = total + (c - 1);
+#define endl '\n'
+
+int main () {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int n, x, total = 0;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cin >> x;
+        total += x-1;
     }
-    printf ("%d\n", total);
+    cout << total << endl;
     return 0;
 }
