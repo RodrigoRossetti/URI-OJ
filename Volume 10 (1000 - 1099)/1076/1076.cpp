@@ -1,29 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define endl '\n'
+
 int main() {
-    int t, n, v, a, x, y, k, l;
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t, n, v, a, x, y;
     cin >> t;
     while (t--) {
         cin >> n >> v >> a;
-        int arr[a][2];
-        for (int i = 0; i < a; i++) {
+        vector<vector<bool>> adj(v, vector<bool>(v));
+        int total = 0;
+        while (a--) {
             cin >> x >> y;
-            arr[i][0] = x;
-            arr[i][1] = y;
-        }
-        int p = a;
-        for (int i = 0; i < p; i++) {
-            k = arr[i][0];
-            l = arr[i][1];
-            for (int j = i+1; j < p; j++) {
-                if ((arr[j][0] == l && arr[j][1] == k) || (arr[j][0] == k && arr[j][1] == l)) {
-                    a--;
-                    break;
-                }
+            if (!adj[x][y]) {
+                adj[x][y] = adj[y][x] = 1;
+                total += 2;
             }
         }
-        cout << a*2 << endl;
+        cout << total << endl;
     }
     return 0;
 }
