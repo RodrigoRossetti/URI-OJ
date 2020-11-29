@@ -12,9 +12,12 @@ int main() {
 		for (auto& x : s) cin >> x;
 		for (auto& x : r) cin >> x;
 		int pos = 0;
-		for (int i = 0; i < n; i++)
-			if (s[i] == r[pos] && pos < m)
+		for (int i = 0; i < n; i++) {
+			if (s[i] == r[pos]) {
+				if (pos == m) break;
 				pos++;
+			}
+		}
 		cout << (pos == m ? "sim" : "nao") << endl;
 	}
 	return 0;
