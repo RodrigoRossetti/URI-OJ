@@ -16,6 +16,6 @@ int main() {
 		else b1 = m/(++y+1);
 		t = (x+1)*(y+1);
 	}
-	cout << ceil(max(a2, b2)) << endl;
+	cout << fixed << setprecision(0) << ceil(max(a2, b2)) << endl;
 	return 0;
 }
