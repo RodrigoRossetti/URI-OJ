@@ -44,8 +44,6 @@ My Profile: [Rodrigo Rosseti](https://www.urionlinejudge.com.br/judge/pt/users/s
 
 - 🔵 [3086](https://www.urionlinejudge.com.br/judge/pt/problems/view/3086)<span style="color:blue"> - Time Limit Exceeded.</span> I solved this problem [live](https://www.urionlinejudge.com.br/judge/pt/users/contest/503), however it seems that the test cases are way harder now.
 
-- 🔴 [3105](https://www.urionlinejudge.com.br/judge/pt/problems/view/3105)<span style="color:red"> - Wrong Answer (30%)</span>
-
 - 🔴 [3112](https://www.urionlinejudge.com.br/judge/pt/problems/view/3112)<span style="color:red"> - Wrong Answer (100%)</span>
 
 - 🔴 [3121](https://www.urionlinejudge.com.br/judge/pt/problems/view/3121)<span style="color:red"> - Wrong Answer (5%)</span>
