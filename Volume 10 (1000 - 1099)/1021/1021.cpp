@@ -15,19 +15,19 @@ int main() {
 		n -= value[i] * out[i];
 	}
 	if (n >= 0.001) out[11]++;
-	cout	<< "NOTAS:" << endl
-			<< out[0] << " nota(s) de R$ 100.00" << endl
-			<< out[1] << " nota(s) de R$ 50.00" << endl
-			<< out[2] << " nota(s) de R$ 20.00" << endl
-			<< out[3] << " nota(s) de R$ 10.00" << endl
-			<< out[4] << " nota(s) de R$ 5.00" << endl
-			<< out[5] << " nota(s) de R$ 2.00" << endl;
-	cout	<< "MOEDAS:" << endl
-			<< out[6] << " moeda(s) de R$ 1.00" << endl
-			<< out[7] << " moeda(s) de R$ 0.50" << endl
-			<< out[8] << " moeda(s) de R$ 0.25" << endl
-			<< out[9] << " moeda(s) de R$ 0.10" << endl
-			<< out[10] << " moeda(s) de R$ 0.05" << endl
-			<< out[11] << " moeda(s) de R$ 0.01" << endl;
+    cout    << "NOTAS:" << endl
+            << out[0] << " nota(s) de R$ 100.00" << endl
+            << out[1] << " nota(s) de R$ 50.00" << endl
+            << out[2] << " nota(s) de R$ 20.00" << endl
+            << out[3] << " nota(s) de R$ 10.00" << endl
+            << out[4] << " nota(s) de R$ 5.00" << endl
+            << out[5] << " nota(s) de R$ 2.00" << endl;
+    cout    << "MOEDAS:" << endl
+            << out[6] << " moeda(s) de R$ 1.00" << endl
+            << out[7] << " moeda(s) de R$ 0.50" << endl
+            << out[8] << " moeda(s) de R$ 0.25" << endl
+            << out[9] << " moeda(s) de R$ 0.10" << endl
+            << out[10] << " moeda(s) de R$ 0.05" << endl
+            << out[11] << " moeda(s) de R$ 0.01" << endl;
     return 0;
 }
