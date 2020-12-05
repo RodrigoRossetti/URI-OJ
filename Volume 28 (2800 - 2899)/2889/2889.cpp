@@ -29,7 +29,7 @@ int main() {
 		for (int i = 1; i < n; i++) {
 			if 	(t[i].pontos > t[x].pontos ||
 				(t[i].pontos == t[x].pontos && t[i].gols > t[x].gols)) y = x, x = i;
-			else if (t[i].pontos > t[y].pontos ||
+			else if	(t[i].pontos > t[y].pontos ||
 					(t[i].pontos == t[y].pontos && t[i].gols > t[y].gols)) y = i;
 		}
 		vice[y]++;
